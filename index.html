@@ -1,0 +1,720 @@
+<html>
+	<head>
+		<title>Project 1</title>
+		<style type="text/css">
+			body{
+					margin:0;
+					padding:0;
+				}
+				#mainarea{
+						width:1679px;
+						height:8560px;
+						background: #f3faf2 ;
+						border-radius:10px;
+						}
+				#menuarea{
+						width:1679px;
+						height:850px;
+						background:url('back1.jpg') no-repeat fixed;
+						background-size:100% 100%;
+						}
+				#menuarea h2{
+						color:white;
+						text-align:right;
+						margin:40px 180px 0 0;
+						font:bold 40px arial;
+						}
+				#menuarea p{
+						color:white;
+						text-align:right;
+						margin:0 40px 0 0;
+						font:bold 80px arial;
+						}
+				#toparea{
+						width:1679px;
+						height:80px;
+						background:#094207;
+						}
+				#toparea ul{
+						list-style:none;
+						margin:0;
+						padding:12px;
+						}
+				#toparea p{
+						color:white;
+						font-style:illuminati;
+						}
+				#toparea ul li{
+						float:left;
+						}
+				#toparea ul li a:link,#toparea ul li a:visited{
+							color:white;
+							font-size:20px;
+							background:transparent;
+							text-decoration:none;
+							padding:10px 35px;
+							display:block;
+							text-align:center;
+							border-radius:10px;
+						}
+				#toparea ul li a:hover{
+							color:#115408;
+							background:#4fbd40;
+							border-bottom:solid 5px #EB8116;
+						}
+				#toparea ul li ul{
+							display:none;
+						}
+				#toparea ul li:hover ul{
+							display:block;
+							position:absolute;
+							z-index:1000;
+						}
+				#toparea ul li:hover ul li{
+							float:none;		
+						}
+				#slidearea{
+						width:1679px;
+						height:800px;
+						background:white;
+						}
+				#slide1{
+						width:739px;
+						height:700px;
+						background:url('water.jpg') no-repeat;
+						background-size:100% 100%;
+						margin:50px;
+						box-shadow:0px 0px 12px 1px rgba(0,0,0,0.75);
+						float:left;
+						}
+				#slide2{
+						width:739px;
+						height:700px;
+						background:white;
+						margin:50px;
+						float:right;
+						}
+				#slide2 h1{
+						font-style:italic;
+						color:#094207;
+						font-size:60px; 
+						}
+				#slide2 h2{
+						font-style:arial;
+						color:#094207;
+						font-size:40px;  
+						}
+				#slide2 p{
+						text-align:justify;
+						color:#EB8116;
+						font-size:30px;  
+						line-height:35px;
+						}
+				#darea{
+						width:1679px;
+						height:800px;
+						background:transparent;
+						}
+				#darea h1{
+						text-align:center;
+						}
+				#darea h1:hover{
+						color:#115408;
+						}
+				#d1{
+						width:679px;
+						height:540px;
+						background:url('people.jpg') no-repeat;
+						background-size:100% 100%;
+						box-shadow:0px 0px 15px 1px rgba(0,0,0,0.75);
+						margin:80px;
+						float:left;
+						
+						}
+				#d2{
+						width:679px;
+						height:540px;
+						background:url('couple.jpg') no-repeat;
+						background-size:100% 100%;
+						box-shadow:0px 0px 12px 1px rgba(0,0,0,0.75); 
+						margin:80px;
+						float:right;
+						}
+				#d1:hover,#d2:hover{
+						transform:scale(1.2);
+				}	
+				#favarea{
+						width:1679px;
+						height:1500px;
+						background:transparent;
+						}	
+				#favarea h1{
+						width:1000px;
+						height:150px;
+						color:#115408;
+						font-size:70px;
+						font-family:cursive;
+						transform:rotate(-10deg);
+						}
+				#fav1area{
+						width:1679px;
+						height:1500px;
+						background:white;
+						}	
+				#fav11{
+						width:519px;
+						height:400px;
+						margin:10px 20px;
+						background:linear-gradient(to bottom,green,transparent);
+						border-radius:0 50% 0 50%;
+						float:left;
+						}	
+				#fav12{
+						width:349px;
+						height:340px;
+						border-radius:50%;
+						margin:30px 85px;
+						background:black;
+						box-shadow: 0px 2px 17px 0px rgba(0,0,0,1);
+						float:left;
+						}	
+				#fav12 img{
+						width:349px;
+						height:340px;
+						border-radius:50%;
+						}
+				#fav12:hover{
+						transform:scale(1.2);
+						box-shadow: -8px -7px 19px 1px rgba(0,0,0,1);
+						}	
+				#menu{
+						width:1679px;
+						height:800px;
+						background:transparent;
+						}
+				#menu1{
+						width:1679px;
+						height:130px;
+						background: #f3faf2;
+						float:left;
+						}
+				#menu1 img{
+						margin:10px 685px;
+						border-top:double 4px #094207;
+						border-right:double 4px #094207;
+						border-left:double 4px #094207;
+						}
+				#menu1 img:hover{
+						background:#094207;
+						border-top:double 4px #f3faf2;
+						border-right:double 4px #f3faf2;
+						border-left:double 4px #f3faf2;
+						}
+				#menu2{
+						width:1679px;
+						height:670px;
+						background:#f3faf2;
+						float:left;
+						}
+				#menu21{
+						width:459px;
+						height:570px;
+						margin:50px;
+						float:left;
+						}
+				#menu22{
+						width:459px;
+						height:570px;
+						margin:50px;
+						float:left;
+						}
+				#menu23{
+						width:459px;
+						height:570px;
+						margin:50px;
+						float:left;
+						}
+				#menu2 img{
+						width:100%;
+						height:100%;
+						}
+				#menu2 img:hover{
+						transform:scale(1.4);
+						}
+				#marea{
+						width:1679px;
+						height:800px;
+						background:url('paper.jpg') no-repeat fixed;
+						background-size:100% 100%;
+						backdrop-filter: blur(50px);
+						}
+				#m1{
+						width:559px;
+						height:800px;
+						background:url('men.jpg') no-repeat;
+						background-size:100% 100%;
+						border-radius: 0 0 50% 0;
+						box-shadow: 7px 8px 17px 5px rgba(0,0,0,0.43);
+						float:left;
+						}
+				#m2{
+						width:300px;
+						height:90px;
+						box-shadow: 20px 0px 41px -3px rgba(0,0,0,0.85);
+						margin:150px 0 0 30px;
+						float:left;
+						}
+				#m2 a:link,#m2 a:visited{
+							font:50px bold helvetica;
+							text-decoration:none;
+							color:white;
+							display:block;
+							text-align:center;
+						}
+				#m2:hover{
+						transform:scale(1.1);
+						border-bottom:solid 5px white;
+						}
+				#m3{
+						width:300px;
+						height:90px;
+						box-shadow: 20px 0px 41px -3px rgba(0,0,0,0.85);
+						margin:260px 0 0 10px;
+						float:left;
+						}
+				#m3 a:link,#m3 a:visited{
+							font:50px bold helvetica;
+							text-decoration:none;
+							color:white;
+							display:block;
+							text-align:center;
+						}
+				#m3:hover{
+						transform:scale(1.1);
+						border-bottom:solid 5px white;
+						}
+				/*#m3 div{
+						height:300px;
+						width:400px;
+						background:red;
+						display:none;
+				}*/
+				#m3:active div{
+						display:block;
+				}
+				#m4{
+						width:300px;
+						height:90px;
+						box-shadow: 20px 0px 41px -3px rgba(0,0,0,0.85);
+						margin:380px 0 0 10px;
+						float:left;
+						}
+				#m4 a:link,#m4 a:visited{
+							font:50px bold helvetica;
+							text-decoration:none;
+							color:white;
+							display:block;
+							text-align:center;
+						}
+				#m4:hover{
+						transform:scale(1.1);
+						border-bottom:solid 5px white;
+						}
+				#m5{
+						width:150px;
+						height:40px;
+						box-shadow: 12px -1px 85px -10px #E47B17;
+						margin:745px 10px 0 0px;
+						float:left;
+						}
+				#m5 a:link,#m5 a:visited{
+							font:30px normal helvetica;
+							text-decoration:none;
+							color:white;
+							display:block;
+							text-align:center;
+						}
+				#m5:hover{
+						transform:scale(1.1);
+						border:solid 5px white;
+						}
+				#boxarea{
+						width:1679px;
+						height:1500px;
+						background:transparent;
+						}
+				#box1{
+						width:899px;
+						height:950px;
+						float:left;
+						}
+				#box11{
+						width:480px;
+						height:950px;
+						float:left;
+						font-size:22px;
+						}
+				#box11 h2{
+						width:480px;
+						font-size:30px;
+						margin:60px 0 0 30px;
+						}
+				#box11 p{
+						width:480px;
+						font-size:22px;
+						margin:20px 0 0 30px;
+						}
+				#box11 a:link,#box11 a:visited{
+							width:220px;
+							height:25px;
+							font:bold 22px arial;
+							color:black;
+							background:transparent;
+							text-decoration:none;
+							margin:40px 0  40px 30px;
+							padding:22px 10px;
+							display:block;
+							text-align:center;
+							border:solid 3px black;
+						}
+				#box11 a:hover{
+							color:white;
+							background:black;
+						}
+				#box12{
+						width:419px;
+						height:500px;
+						margin:75px 0px;
+						float:right;
+						}
+				#box12 h2{
+						width:419px;
+						font-size:30px;
+						margin:0 0 0 30px;
+						}
+				#box12 p{
+						width:419px;
+						font:normal 18px arial;
+						margin:20px 0 0 30px;
+						}
+				#box12 a:link,#box12 a:visited{
+							color:black;
+							margin:40px 0  40px 30px;
+							font-size:20px;
+						}
+				#box12 h1{
+						width:419px;
+						font-size:40px;
+						margin:30px 0 0 30px;
+						}
+				#box2{
+						width:780px;
+						height:800px;
+						float:right;
+						margin:75px 0px;
+						background:url('photo.avif');
+						background-size:100% 100%;
+						}
+				#box3{
+						width:1679px;
+						height:550px;
+						opacity:0.7;
+						}
+				#box3:hover{
+						opacity:1;
+						}
+				#footerarea{
+						width:1679px;
+						height:1060px;
+						background:transparent;
+						}
+				#footerarea h3{
+							text-align:center;
+							font:normal 40px arial;
+							margin:100px 0 150px 0;
+						}
+				#footerarea p{
+							text-align:center;
+							font:normal 25px arial;
+							text-align:center;
+							margin:50px 0 0 0;
+						}
+				#footerarea a:link,#footerarea a:visited{
+							width:350px;
+							height:25px;
+							font:normal 22px arial;
+							color:black;
+							background:transparent;
+							text-decoration:none;
+							margin:60px 0  30px 650px;
+							padding:22px 10px;
+							display:block;
+							text-align:center;
+							border:solid 3px black;
+						}
+				#footerarea a:hover{
+							color:white;
+							background:black;
+						}
+				#footarea{
+						width:1679px;
+						height:450px;
+						background:#094207;
+						}
+				#foot1{
+						width:399px;
+						height:390px;
+						background:transparent;
+						float:left;
+						margin:0 10px 10px 10px;
+						}
+				.fa-facebook{
+						font-size:30px;
+						color:white;
+						margin:0 0 0 15px;
+						}
+				.fa-instagram{
+						font-size:30px;
+						color:white;
+						margin:0 0 0 15px;
+						}
+				.fa-square-share-nodes{
+						font-size:50px;
+						color:white;
+						margin:50px 0 0 20px;
+						}
+				#foot2{
+						width:1679px;
+						height:50px;
+						background:#132F0C;
+						float:left;
+						}
+				#foot2 p{
+						text-align:center;
+						color:#4fbd40;
+						}
+				#foot1 h4{
+							color:white;
+							font:normal 25px arial;
+							margin:20px;
+							border-left:solid 5px #4fbd40;
+						}
+				#foot1 h3{
+							color:#4fbd40;
+							font:normal 25px arial;
+							margin:20px;
+						}
+				#foot1 p{
+							color:white;
+							font:normal 20px arial;
+							margin:20px;
+						}
+				#foot1 p:hover{
+							color:#4fbd40;
+						}
+		</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<div id="mainarea">
+			<div id="menuarea">
+				<div id="toparea">
+					<ul>
+						<li><a href="ft.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="#menu">MENU</a></li>
+						<li><a href="#">OUTLETS</a></li>
+						<li><a href="events.html">EVENTS</a></li>
+						<li><a href="#footerarea">CONTACT</a></li>
+						<li><a href="reserve.html">RESERVE NOW</a></li>
+					</ul>
+				</div>
+				<h2>SPORTS BRASSERIE</h2>
+				<p>LEGENDARY<br>ATMOSPHERE</p>
+			</div>
+			<div id="slidearea">
+				<div id="slide1">
+				</div>
+				<div id="slide2">
+					<h1>Dining Under the Forest-retranT</h1>
+					<h2>The unique home away from home</h2>
+					<p>Tucked away in a secluded clearing, the Whispering<br> 
+						Woods Restaurant offered a tranquil escape for<br>
+ 						couples seeking a romantic dining experience.<br>
+ 						Surrounded by towering trees and soft, ethereal<br>
+ 						lighting, a single table beckoned, adorned with fine<br>
+ 						china and a delicate floral arrangement. As they sat<br>
+ 						down, the gentle rustle of leaves and chirping of<br> 
+						crickets serenaded the couple, savoring each bite of<br>
+				 		their exquisite meal in peaceful harmony with nature.</p>
+				</div>
+			</div>
+			<div id="darea">
+				<h1> Unique Experience</h1>
+				<div id="d1">
+				</div>
+				<div id="d2">
+				</div>
+			</div>
+			<div id="favarea">
+				<h1>Most <br>Customer Favourites...</h1>
+				<div id="fav1area">
+					<div id="fav11">
+						<div id="fav12">
+							<img src="break.jpg">
+						</div>
+					</div>
+					<div id="fav11">
+						<div id="fav12">
+							<img src="break1.jpg">
+						</div>
+					</div>
+					<div id="fav11">
+						<div id="fav12">
+							<img src="break2.jpg">
+						</div>
+					</div>
+					<div id="fav11">
+						<div id="fav12">
+							<img src="lunch.jpg">
+						</div>
+					</div>
+					<div id="fav11">
+						<div id="fav12">
+							<img src="lunch2.jpg">
+						</div>
+					</div>
+					<div id="fav11">
+						<div id="fav12">
+							<img src="lunch1.jpg">
+						</div>
+					</div>					
+					<div id="fav11">
+						<div id="fav12">
+							<img src="drink.jpg">
+						</div>
+					</div>
+					<div id="fav11">
+						<div id="fav12">
+							<img src="drink1.jpg">
+						</div>
+					</div>
+					<div id="fav11">
+						<div id="fav12">
+							<img src="drink2.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="menu">
+				<div id="menu1">
+					<img src="menu.png">
+				</div>
+				<div id="menu2">
+					<div id="menu21">
+						<img src="mbreakfast.png">
+					</div>
+					<div id="menu22">
+						<img src="mlunch.jpg">
+					</div>
+					<div id="menu23">
+						<img src="mdinner.jpg">
+					</div>
+				</div>
+			</div>
+			<div id="marea">
+				<div id="m1">
+				</div>
+				<div id="m2">
+					<a href="reserve.html">Book A Table</a>
+				</div>
+				<div id="m3">
+					<a href="reserve.html">Order Now</a>
+					<div></div>
+				</div>
+				<div id="m4">
+					<a href="reserve.html">Order Online</a>
+				</div>
+				<div id="m5">
+					<a href="reserve.html">Gift Card</a>
+				</div>
+			</div>
+			<div id="boxarea">
+				<div id="box1">
+					<div id="box11">
+						<h2>Location & Hours</h2>
+						<p>2132 E 7th Place,<br>
+						Los Angeles, CA 90021on Google Maps<br>
+						Call Damian by phone at+1 (213) 270-0178</p>
+						<a href="#box3">GET DIRECTIONS</a>
+						TUESDAY<br>
+						Closed<br>
+						MONDAY & WEDNESDAY <br>& THURSDAY
+						5:30pm to 9pm<br>
+						FRIDAY<br>
+						5:30pm to 10pm<br>
+						SATURDAY<br>
+						5pm to 10pm<br>
+						SUNDAY<br>
+						5pm to 9pm
+						<a href="reserve.html">RESERVATIONS</a>
+					</div>
+					<div id="box12">
+						<h2>CONTACT</h2>
+						<p>General Inquires</p>
+						<a href="#">info@forestrent.com</a>
+						<p>Media & Press</p>
+						<a href="#">press@casamata.com</a>
+						<p>Careers</p>
+						<a href="#">careers@forestrent.com</a>
+						<h1> FB IG</h1>
+					</div>
+				</div>
+				<div id="box2">
+				</div>
+				<div id="box3">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.4055764592717!2d-118.2289512!3d34.033466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c70edfd6917f%3A0xf0e60340960841d0!2sDamian!5e0!3m2!1sen!2sin!4v1725453854902!5m2!1sen!2sin" width="1679px" height="550px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+			<div id="footerarea">
+				<h3>CONTACT</h3>
+				<a href="#">For all Media Inquires link here</a>
+				<p>Send us a message and we’ll get back to you as soon as possible. You can also reach us by phone at 212.980.4796. Looking forward to hearing from you.</p>
+				<p>Name-Required:<br>&#x200B;_____________________________________</p>
+				<p>Email-Required:<br>&#x200B;_____________________________________</p>
+				<p>Phone Number-Required:<br>&#x200B;_____________________________________</p>
+				<p>Your Message-Required:<br>&#x200B;_____________________________________</p>
+				<a href="#">Send</a>
+				<p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+			</div>
+			<div id="footarea">
+				<div id="foot1">
+					<h4>Comapany</h4>
+					<p>About Us</p>
+					<p>Brand Resources</p>
+					<p>Disclaimer</p>
+					<p>Privacy Policy</p>
+					<p>Terms of Service</p>
+				</div>
+				<div id="foot1">
+					<h3>Social</h3>
+					<i class="fa-brands fa-facebook"></i>
+					<i class="fa-brands fa-instagram"></i>
+				</div>
+				<div id="foot1">
+					<h3>Contact Us</h3>
+					<p>Call: +7254059174</p>
+					<p>Mail: support@forestrent.in</p>
+				</div>
+				<div id="foot1">
+					<i class="fa-solid fa-square-share-nodes"></i>
+					<p>Share Now...</p>
+				</div>
+				<div id="foot2">
+					<p>© 2024 Jungle Restaurant. All Rights Reserved.
+						Site by Biz Glows</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,400 @@
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			body{
+				margin:0px;
+				padding:0px;
+			}
+			#toparea{
+					width:1350px;
+					height:50px;
+					background:#270056;
+			}
+			#toparea p{
+					font:normal 18px arial;
+					color:white;
+					margin:12px 0 0 10px;
+					float:left;
+			}
+			.fa-location-dot{
+					font-size:20px;
+					color:white;
+					float:left;
+					margin:12px 0 0 40px;
+			}
+			#mainarea{
+					width:1350px;
+					height:80px;
+					background:white;
+					position:sticky;
+					top:0;
+					z-index:1000;
+			}
+			#menuarea{
+					width:320px;
+					height:60px;
+					background:transparent;
+					float:left;
+			}
+			#menuarea img{
+					width:55px;
+					height:55px;
+					margin:7px 0 0 60px;
+					float:left;
+			}
+			#menuarea h2{
+					margin:15px 0 0 0px;
+					color:#270056;				
+			}
+			#menuarea p{
+					font:normal 15px arial;
+					margin:0;
+					color:gray;
+			}
+			#menu{
+					width:550px;
+					height:60px;
+					float:left;
+					background:transparent;
+			}
+				#menu ul{
+						list-style:none;
+						margin:15px 0px 0 0px;
+						padding:0px;
+						}
+				#menu ul li{
+						float:left;
+						}
+				#menu ul li a:link,#menu ul li a:visited{
+							color:#270056;
+							font-size:17px;
+							background:transparent;
+							text-decoration:none;
+							padding:8px;
+							display:block;
+							text-align:center;
+						}
+				#menu ul li a:hover{
+							border-bottom:solid 2px #270056;
+						}
+				#menu ul li ul{
+							display:none;
+						}
+				#menu ul li:hover ul{
+							display:block;
+							position:absolute;
+							z-index:1000;
+						}
+				#menu ul li:hover ul li{
+							float:none;		
+						}
+				#number{
+						width:480px;
+						height:60px;
+						background:transparent;
+						float:left;
+				}
+				.fa-phone-volume{
+					font-size:18px;
+					color:#E74E06;
+					float:left;
+					margin:23px 5px 0 30px;
+				}
+				#number p{
+						color:#270056;
+						margin:15px 0 0 5px;
+							float:left;
+				}
+				#number a:link,#number a:visited{
+							width:120px;
+							height:20px;
+							font:normal 18px arial;
+							color:white;
+							background:#E74E06;
+							text-decoration:none;
+							margin:17px 0 0 80px;
+							padding:5px;
+							display:block;
+							text-align:center;
+							border:solid 1px #270056;
+							float:left;
+						}
+				#number a:hover{
+							color:white;
+							background:#270056;
+						}
+			#background{
+					width:1350px;
+					height:510px;
+					background:url(bg.jpg) no-repeat;
+					background-size:100% 100%;
+					opacity:0.9;
+			}
+			#back{
+					width:800px;
+					height:496px;
+					background:transparent;
+					background:linear-gradient(to right,black,transparent);
+			}
+				#back a:link,#back a:visited{
+							width:200px;
+							height:20px;
+							font:normal 18px arial;
+							color:white;
+							background:#E74E06;
+							text-decoration:none;
+							margin:100px 0 0 60px;
+							padding:5px;
+							display:block;
+							text-align:center;
+							float:left;
+						}
+				#back a:hover{
+							color:white;
+							background:#270056;
+						}
+				#back h1{
+							color:white;
+							float:left;
+							font-size:50px;
+							margin:10px 0 0 60px;		
+						}
+				#back p{
+							color:white;
+							float:left;
+							margin:10px 0 0 60px;		
+						}
+				#second{
+						width:1350px;
+						height:620px;
+						background:url(yard.jpg) fixed;
+						background-size:100% 100%;
+				}
+				#second1{
+						width:515px;
+						height:460px;
+						margin:40px 80px 80px 80px;
+						background:url(mf.jpg) no-repeat;
+						background-size:100% 100%;
+						float:left;
+						border-radius:5px;
+				}
+				#second1 h2{
+						width:120px;
+						height:70px;
+						background:#E74E06;
+						color:white;
+						font:bold 30px arial;
+						text-align:center;
+						margin:50px -60px 0px 0px;
+						padding:10px 0 0 0;
+						float:right;
+						border-radius:8px;
+				}
+				#second1 img{
+						width:250px;
+						height:200px;
+						background-size:100% 100%;
+						margin:300px -120px -10px 0px;
+						float:right;
+						border-radius:5px;
+						border:solid 15px white;
+				}
+				#second2{
+						width:675px;
+						height:620px;
+						background:transparent;
+						float:left;
+				}
+				#second2 h2{
+						font:bold 40px arial;
+						margin:40px 0px 10px 40px;
+				}
+				#second2 p{
+						margin:0px 0 10px 40px;
+						font:normal 15px arial;
+				}
+				#colored-line{
+					color:#E74E06;
+				}
+				#second2 img{
+						width:40px;
+						height:40px;
+						margin:20px 0 0px 40px;
+						color:#E74E06;
+						float:left;
+				}
+				#second2 h5{
+						font:normal 20px arial;
+						margin:25px 45px 35px 15px;
+						float:left;
+				}
+				#second ul li{
+					position:relative;
+					list-style:none;
+					padding:0 0 15px 0;
+					margin:0 0 0 20px;
+					font-size:25px;
+				}
+				#second ul li:before{
+					position:absolute;
+					content:"\2713";
+					color:#270254;
+					float:left;
+					left:-25px;
+				}
+				#second a:link,#second a:visited{
+							width:120px;
+							height:20px;
+							font:normal 18px arial;
+							color:white;
+							background:#E74E06;
+							text-decoration:none;
+							margin:17px 0 0 40px;
+							padding:5px;
+							display:block;
+							text-align:center;
+							border:solid 1px #270056;
+							float:left;
+						}
+				#second a:hover{
+							color:white;
+							background:#270056;
+						}
+				#thirdarea{
+						width:1350px;
+						height:720px;
+						background:linear-gradient(to top,#686869,transparent);
+				}
+				#thirdtop{
+						width:1300px;
+						height:100px;
+						background:transparent;
+						margin:0 25px;
+				}
+				#thirdtop h1{
+						width:900px;
+						height:34px;
+						font:bold 35px arial;
+						margin:35px 0px 0px 60px;
+						float:left;
+				}
+				#thirdtop a:link,#thirdtop a:visited{
+							width:180px;
+							height:20px;
+							font:normal 18px arial;
+							color:white;
+							background:#E74E06;
+							text-decoration:none;
+							margin:35px 20px 0 0;
+							padding:5px;
+							display:block;
+							text-align:center;
+							border:solid 1px #270056;
+							float:right;
+						}
+				#thirdtop a:hover{
+							color:white;
+							background:#270056;
+						}
+				#third{
+						width:1300px;
+						height:620px;
+						background:transparent;
+						margin:0 25px;
+					}
+				.thirdbox1{
+						width:373px;
+						height:290px;
+						background: white;
+						border-radius:10px;
+						margin:10px 30px;
+						float:left;
+					}
+				.fa-computer{
+						width:10px;
+						height:10px;
+					}
+		</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<div id="toparea">
+			<i class="fa-sharp fa-solid fa-location-dot"></i>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+		</div>
+		<div id="mainarea">
+			<div id="menuarea">
+				<img src="pc2.jpg">
+				<h2>COMPUTER</h2>
+				<p>Service & Repair</p>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="">HOME</a></li>
+					<li><a href="">ABOUT</a></li>
+					<li><a href="">SOLUTION</a></li>
+					<li><a href="">WORK WITH US</a></li>
+					<li><a href="">CONTACT US</a></li>
+				</ul>
+			</div>
+			<div id="number">
+				<i class="fa-sharp fa-solid fa-phone-volume"></i>
+				<p>Call Us<br>91+7254059174</p>
+				<a href="">Get In Touch</a>
+			</div>
+		</div>
+		<div id="background">
+			<div id="back">
+				<a href="">5K+ Trusted our clients</a>
+				<h1>Empower your business<br>journey with it expertise</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Iste fugit consequuntur laboriosam<br> 
+					quonemo ,nesciunt similique expedita odio soluta saepe. </p>
+				<a href="">Get In Touch</a>
+			</div>
+		</div>
+		<div id="second">
+			<div id="second1">
+				<h2>20+<br>Years</h2>
+				<img src="pro3.jpg">
+			</div>
+			<div id="second2">
+				<h2><span id="colored-line">We Work For</span> Your Since 1980 ,<br>Industrial Around</h2>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit sint<br>
+					necessitatibus velit, id nulla ex eius architecto fugit dolor.</p>
+				<img src="bicon.png">
+				<h5>Business Strategy</h5>
+				<img src="ticon.png">
+				<h5>Tech Strategy</h5>
+				<ul>
+					<li>Profesional team member</li>
+					<li>Awards winning it solution company</li>
+					<li>Dedicated tech services</li>
+				</ul>
+				<a href="">Read More</a>
+			</div>
+		</div>
+		<div id="thirdarea">
+			<div id="thirdtop">
+				<h1><span id="colored-line">Explore</span> Large Scale Projects </h1>
+				<a href="">Explore Our Services</a>
+			</div>
+			<div id="third">
+				<div class="thirdbox1">
+					<i class="fa-sharp fa-regular fa-computer"></i>
+				</div>
+				<div class="thirdbox1">
+				</div>
+				<div class="thirdbox1">
+				</div>
+				<div class="thirdbox1">
+				</div>
+				<div class="thirdbox1">
+				</div>
+				<div class="thirdbox1">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
